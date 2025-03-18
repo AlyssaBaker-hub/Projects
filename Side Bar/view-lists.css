@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #11121a;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+
+/* General styles */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-clr);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the post list */
+.post-list-container {
+    margin-left: 270px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+/* Section headers */
+.posts-container h3,
+.users-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--text-clr);
+}
+
+/* Post and user items */
+.post-item,
+.user-item {
+    background-color: var(--line-clr);
+    border: 1px solid var(--hover-clr);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.post-item:hover,
+.user-item:hover {
+    background-color: var(--hover-clr);
+}
+
+.post-item h4,
+.user-item h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: var(--text-clr);
+}
+
+.post-item p,
+.user-item p {
+    font-size: 0.9em;
+    color: var(--secondary-text-clr);
+}
+
+.post-item a,
+.user-item a {
+    color: var(--accent-clr);
+    text-decoration: none;
+}
+
+.post-item a:hover,
+.user-item a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: var(--line-clr);
+    border-right: 1px solid var(--hover-clr);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-clr);
+}
+
+/* List of items */
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-list-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    color: var(--text-clr);
+}
+
+.sidebar-list-item:hover {
+    background-color: var(--hover-clr);
+}
+
+/* Active item */
+.sidebar-list-item.active {
+    background-color: var(--accent-clr);
+    color: var(--text-clr);
+}
+
+/* Item content */
+.sidebar-list-item .item-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.sidebar-list-item .item-description {
+    font-size: 0.9em;
+    color: var(--secondary-text-clr);
+}

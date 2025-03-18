@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #11121a;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    color: var(--text-clr);
+}
+
+header {
+    background-color: var(--line-clr);
+    color: var(--text-clr);
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1rem;
+}
+
+#feeds-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feed-item {
+    background-color: var(--line-clr);
+    border: 1px solid var(--hover-clr);
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 1rem;
+    width: 50px;
+}
+
+.feed-info {
+    flex: 1;
+}
+
+.feed-author {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--accent-clr);
+}
+
+.feed-username {
+    color: var(--secondary-text-clr);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.feed-content {
+    margin-top: 0.5rem;
+}

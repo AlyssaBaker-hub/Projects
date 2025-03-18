@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #4a136e;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+
+/* Container for the mentions section */
+.mentions-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--base-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(45, 3, 94, 0.1);
+}
+
+/* Individual mention item */
+.mention-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--line-clr);
+    transition: background-color 0.3s;
+}
+
+.mention-item:hover {
+    background-color: var(--hover-clr);
+}
+
+.mention-item:last-child {
+    border-bottom: none;
+}
+
+/* User avatar */
+.mention-item .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Mention content */
+.mention-item .content {
+    flex: 1;
+}
+
+.mention-item .content .username {
+    font-weight: bold;
+    color: var(--text-clr);
+    font-size: 16px;
+}
+
+.mention-item .content .message {
+    color: var(--secondary-text-clr);
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Timestamp */
+.mention-item .timestamp {
+    font-size: 12px;
+    color: var(--secondary-text-clr);
+    margin-left: 10px;
+}

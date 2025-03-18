@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="community.css">
+</head>
+<body>
+    <header>
+        <h1>Community</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="community-posts">
+            <h2>Recent Posts</h2>
+            <article class="post">
+                <h3>Post Title 1</h3>
+                <p>Post content goes here...</p>
+                <p><small>Posted by User1 on 2023-10-01</small></p>
+            </article>
+            <article class="post">
+                <h3>Post Title 2</h3>
+                <p>Post content goes here...</p>
+                <p><small>Posted by User2 on 2023-10-02</small></p>
+            </article>
+            <!-- Add more posts as needed -->
+        </section>
+        <section class="create-post">
+            <h2>Create a New Post</h2>
+            <form action="submit_post.html" method="post">
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="post-title" required>
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="post-content" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

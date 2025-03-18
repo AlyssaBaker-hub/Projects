@@ -1,0 +1,31 @@
+/* start-a-new-chat.css */
+
+.start-new-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.start-new-chat:hover {
+    background-color: #0056b3;
+}
+
+.start-new-chat:active {
+    background-color: #004494;
+}
+
+.start-new-chat-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}

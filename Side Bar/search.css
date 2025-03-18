@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+:root{
+    --base-color: #11121a;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5rem;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--base-color);
+    color: var(--text-clr);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#sidebar-toggle-btn {
+    position: auto;
+    top: 1em;
+    left: 1em;
+    background: var(--line-clr);
+    border: none;
+    border-radius: 15px;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+}
+
+#sidebar-toggle-btn:hover {
+    background: var(--hover-clr);
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 20px;
+    background: var(--line-clr);
+    border: 1px solid transparent;
+    color: var(--text-clr);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-clr);
+}
+
+.search-filters select {
+    padding: 0.8rem;
+    border-radius: 15px;
+    background: var(--line-clr);
+    border: 1px solid transparent;
+    color: var(--text-clr);
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.search-filters select:focus {
+    outline: none;
+    border-color: var(--accent-clr);
+}
+
+.results-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.trending-container {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .search-filters {
+        width: 100%;
+    }
+
+    .search-filters select {
+        width: 100%;
+    }
+}

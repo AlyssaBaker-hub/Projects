@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #0d0d2b;
+    --line-clr: #1b1b3a;
+    --hover-clr: #2a2a5a;
+    --text-clr: #e0e0f8;
+    --accent-clr: #7f7fff;
+    --secondary-text-clr: #a0a0d0;
+}
+
+.dashboard {
+    background-color: var(--base-color);
+    color: var(--text-clr);
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--line-clr);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: var(--accent-clr);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.stats {
+    color: var(--text-clr);
+    font-size: 16px;
+}
+
+.stats div {
+    margin: 10px 0;
+    color: var(--secondary-text-clr);
+}
+
+.social-media-btn {
+    background-color: var(--accent-clr);
+    color: var(--text-clr);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.social-media-btn:hover {
+    opacity: 0.9;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-info {
+    color: var(--text-clr);
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.profile-info p {
+    margin: 0;
+    color: var(--secondary-text-clr);
+    font-size: 14px;
+}
+
+.post {
+    background-color: var(--line-clr);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    color: var(--accent-clr);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    color: var(--text-clr);
+    font-size: 16px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.post-actions button {
+    background-color: var(--hover-clr);
+    color: var(--text-clr);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.post-actions button:hover {
+    opacity: 0.9;
+}

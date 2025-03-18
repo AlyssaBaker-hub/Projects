@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #11121a;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--base-color);
+    color: var(--text-clr);
+}
+
+.user {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--line-clr);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--accent-clr);
+}
+
+.user p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--secondary-text-clr);
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.posts h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--accent-clr);
+}
+
+.posts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.posts ul li {
+    margin-bottom: 10px;
+}
+
+.posts ul li a {
+    text-decoration: none;
+    color: var(--accent-clr);
+}
+
+.posts ul li a:hover {
+    text-decoration: underline;
+    color: var(--hover-clr);
+}

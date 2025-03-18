@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search for friends, posts, content and images">
+    <title>Social Search</title>
+    <link rel="stylesheet" href="search.css">
+    <script type="text/javascript" src="search.js" defer></script>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" 
+               class="search-input" 
+               id="searchInput" 
+               placeholder="Search people, posts, tags, images..."
+               autocomplete="off"
+               aria-label="Search social media">
+        <div class="search-filters">
+            <select id="searchType" title="Search Type">
+                <option value="all">All</option>
+                <option value="people">People</option>
+                <option value="posts">Posts</option>
+                <option value="tags">Tags</option>
+                <option value="images">Images</option>
+            </select>
+        </div>
+    </div>
+    <div id="searchResults" class="results-container">
+        <!-- Search results will be displayed here -->
+        <div id="imageResults" class="image-grid"></div>
+            <!-- Image search results will appear here in a grid layout -->
+    </div>
+    <div id="trendingSearches" class="trending-container">
+        <!-- Trending searches will appear here -->
+    </div>
+</body>
+</html>

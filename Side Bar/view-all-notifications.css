@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+    --base-color: #11121a;
+    --line-clr: #242847;
+    --hover-clr: #33407e;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-clr);
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-btn {
+    background-color: var(--line-clr);
+    border: none;
+    color: var(--text-clr);
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-btn svg {
+    margin-right: 10px;
+}
+
+.sub-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: var(--line-clr);
+}
+
+.sub-menu li {
+    border-bottom: 1px solid var(--hover-clr);
+}
+
+.sub-menu li a {
+    color: var(--text-clr);
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sub-menu li a:hover {
+    background-color: var(--hover-clr);
+}
+
+.dropdown-btn.active + .sub-menu {
+    display: block;
+}
