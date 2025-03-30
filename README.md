@@ -1,2 +1,2 @@
 # Projects
-There are two folders that have two different web page designs.
+Two folders have two different web page designs.
